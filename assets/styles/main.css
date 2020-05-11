@@ -75,3 +75,26 @@
     height: calc(100vh - 62px);
   }
 }
+
+/*********************
+*       SOCIAL
+*********************/
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  position: absolute;
+  right: 100px;
+  top: 40px;
+}
+
+.social svg {
+  height: 23px;
+  transition: all 0.3s ease;
+  fill: var(--clr-base-dark);
+}
+
+.social svg:hover {
+  fill: var(--clr-secondary);
+}
