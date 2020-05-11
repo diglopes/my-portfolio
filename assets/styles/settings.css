@@ -1,0 +1,8 @@
+:root {
+  /* Colors */
+  --clr-primary: #b26c82;
+  --clr-gradient: linear-gradient(to bottom, #db7280, #ac6d82);
+  --clr-secondary: #ffaa55;
+  --clr-base: #fff;
+  --clr-base-dark: #445b7c;
+}
