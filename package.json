@@ -1,0 +1,9 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.1.0",
+  "description": "My personal portfolio as a Web developer",
+  "main": "index.html",
+  "repository": "git@github.com:diglopes/personal-portfolio.git",
+  "author": "Diego Lopes <diego-chez@hotmail.com>",
+  "license": "MIT"
+}
