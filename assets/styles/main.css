@@ -90,6 +90,9 @@
     #b26d80 75%,
     #db7280
   );
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(min-content, max-content);
 }
 
 @media screen and (max-width: 500px) {
@@ -102,11 +105,18 @@
 *       SOCIAL
 *********************/
 
+.social-wrapper {
+  grid-column: 1 / -1;
+  justify-self: end;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-right: 100px;
+}
+
 .social {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 30px;
-  position: absolute;
   right: 100px;
   top: 40px;
 }
@@ -119,4 +129,42 @@
 
 .social svg:hover {
   fill: var(--clr-secondary);
+}
+
+/*********************
+*    PRESENTATION
+*********************/
+
+.main-heading {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  margin-right: auto;
+}
+
+.main-heading .first-word {
+  justify-self: right;
+  align-self: end;
+  margin-right: 12px;
+  margin-bottom: -2px;
+}
+
+.main-heading .name {
+  color: var(--clr-secondary);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.4px;
+  margin-left: -2px;
+}
+
+.main-heading .nomenclature {
+  font-size: 24px;
+  grid-column: 2 / -1;
+  letter-spacing: 2px;
+}
+
+.main-heading span {
+  font-weight: 300;
+  font-size: 28px;
+  color: var(--clr-base-dark);
 }
