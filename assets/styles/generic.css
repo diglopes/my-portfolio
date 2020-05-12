@@ -17,6 +17,16 @@ li {
   list-style: none;
 }
 
+h2 {
+  color: var(--clr-secondary);
+  font-weight: normal;
+  font-size: 28px;
+  padding-left: 100px;
+  padding-right: 40px;
+  border-bottom: 2px solid var(--clr-secondary);
+  display: inline-block;
+}
+
 .wrapper {
   display: flex;
 }
@@ -25,4 +35,28 @@ li {
   .wrapper {
     flex-direction: column;
   }
+}
+
+.btn {
+  color: var(--clr-base);
+  background-color: var(--clr-base-dark);
+  border: none;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(68, 91, 124, 0.3);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #394f6d;
+}
+
+.btn svg {
+  height: 20px;
+  margin-right: 10px;
+  fill: var(--clr-base);
 }
