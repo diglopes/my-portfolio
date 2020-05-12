@@ -18,7 +18,7 @@
       <header class="header">
         <nav class="navigation">
           <li>
-            <a class="nav-item active" href="#">
+            <a class="nav-item active" href="#" data-article="about">
               <svg viewBox="-42 0 512 512.002" class="nav-item-icon">
                 <title>Sobre</title>
                 <path
@@ -29,7 +29,7 @@
           </li>
 
           <li>
-            <a class="nav-item" href="#">
+            <a class="nav-item" href="#" data-article="services">
               <svg viewBox="0 0 512 512" class="nav-item-icon">
                 <title>Serviços</title>
                 <path
@@ -40,7 +40,7 @@
           </li>
 
           <li>
-            <a class="nav-item" href="#">
+            <a class="nav-item" href="#" data-article="resume">
               <svg viewBox="0 0 512 512" class="nav-item-icon">
                 <title>Currículo</title>
                 <path
@@ -54,7 +54,7 @@
           </li>
 
           <li>
-            <a class="nav-item" href="#">
+            <a class="nav-item" href="#" data-article="portfolio">
               <svg viewBox="0 0 512 512" class="nav-item-icon">
                 <title>Portfolio</title>
                 <path
@@ -65,7 +65,7 @@
           </li>
 
           <li>
-            <a class="nav-item" href="#">
+            <a class="nav-item" href="#" data-article="contact">
               <svg viewBox="0 0 511.882 511.882" class="nav-item-icon">
                 <title>Contato</title>
                 <path
@@ -135,7 +135,7 @@
         </div>
 
         <div class="content">
-          <article class="article">
+          <article class="article show" id="about">
             <h2>Sobre Mim</h2>
             <div class="article-wrapper">
               <p>
@@ -166,6 +166,26 @@
             </div>
           </article>
 
+          <article class="article" id="services">
+            <h2>Serviços</h2>
+            <div class="article-wrapper"></div>
+          </article>
+
+          <article class="article" id="resume">
+            <h2>Currículo</h2>
+            <div class="article-wrapper"></div>
+          </article>
+
+          <article class="article" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="article-wrapper"></div>
+          </article>
+
+          <article class="article" id="contact">
+            <h2>Contato</h2>
+            <div class="article-wrapper"></div>
+          </article>
+
           <footer class="footer">
             Desenvolvido com <span class="heart-emoji">❤</span> por Diego Lopes.
           </footer>
@@ -184,5 +204,6 @@
         </section>
       </main>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>

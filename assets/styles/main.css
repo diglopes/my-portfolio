@@ -147,6 +147,16 @@
 
 .article {
   align-self: end;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.article:not(.show) {
+  display: none;
+}
+
+.show {
+  animation: move-in 0.7s ease forwards;
 }
 
 .article p {
@@ -242,4 +252,16 @@
 
 .heart-emoji {
   color: #c70039;
+}
+
+@keyframes move-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
