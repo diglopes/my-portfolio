@@ -141,7 +141,7 @@
 
 .article-wrapper {
   margin-left: 100px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-right: 20px;
 }
 
@@ -197,6 +197,42 @@
   height: 20px;
   margin-right: 10px;
   fill: var(--clr-base);
+}
+
+/*********************
+*       RESUME
+*********************/
+
+.resume-wrapper {
+  border-left: 2px solid var(--clr-base);
+}
+
+.resume-job {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.resume-job:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--clr-secondary);
+  position: absolute;
+  left: -9px;
+}
+
+.resume-job h3 {
+  font-size: 20px;
+  color: var(--clr-base);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.resume-job .time-and-role {
+  color: var(--clr-secondary);
 }
 
 /*********************
