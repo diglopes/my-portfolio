@@ -91,7 +91,7 @@
     #db7280
   );
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 45% 55%;
   grid-auto-rows: minmax(min-content, max-content) 1fr;
 }
 
@@ -314,6 +314,47 @@
 
 #portfolio ul li a:hover::after {
   opacity: 1;
+}
+
+/*********************
+*       CONTACT
+*********************/
+#contact .contact-info {
+  margin-bottom: 30px;
+}
+
+#contact .contact-info li {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#contact .contact-info li:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 15px;
+  background-position: center center;
+  background-size: cover;
+}
+#contact .contact-info .phone:before {
+  background-image: url(../images/telefone_contato.svg);
+}
+#contact .contact-info .mail:before {
+  background-image: url(../images/email.svg);
+}
+#contact .contact-info .address:before {
+  background-image: url(../images/pin_localizacao.svg);
+}
+
+#contact .contact-info a {
+  font-size: 18px;
+  color: #fff;
+}
+
+#contact .contact-info a:hover {
+  text-decoration: underline;
 }
 
 /*********************
