@@ -7,7 +7,7 @@
 body {
   font-size: 16px;
   font-family: "Catamaran", sans-serif;
-  background-color: var(--clr-primary);
+  background-color: $clr-primary;
 }
 
 a {
@@ -19,12 +19,12 @@ li {
 }
 
 h2 {
-  color: var(--clr-secondary);
+  color: $clr-secondary;
   font-weight: normal;
   font-size: 28px;
   padding-left: 100px;
   padding-right: 40px;
-  border-bottom: 2px solid var(--clr-secondary);
+  border-bottom: 2px solid $clr-secondary;
   display: inline-block;
 }
 

@@ -48,11 +48,11 @@
 .social svg {
   height: 23px;
   transition: all 0.3s ease;
-  fill: var(--clr-base-dark);
+  fill: $clr-base-dark;
 }
 
 .social svg:hover {
-  fill: var(--clr-secondary);
+  fill: $clr-secondary;
 }
 
 /*********************
@@ -86,7 +86,7 @@
 .article p {
   font-size: 16px;
   line-height: 1.3;
-  color: var(--clr-base);
+  color: $clr-base;
   font-weight: 500;
   letter-spacing: 1.2px;
 }
@@ -100,8 +100,8 @@
 }
 
 .btn {
-  color: var(--clr-base);
-  background-color: var(--clr-base-dark);
+  color: $clr-base;
+  background-color: $clr-base-dark;
   border: none;
   font-weight: bold;
   padding: 8px 20px;
@@ -120,7 +120,7 @@
 .btn svg {
   height: 20px;
   margin-right: 10px;
-  fill: var(--clr-base);
+  fill: $clr-base;
 }
 
 /*********************
@@ -128,7 +128,7 @@
 *********************/
 
 .resume-wrapper {
-  border-left: 2px solid var(--clr-base);
+  border-left: 2px solid $clr-base;
 }
 
 .resume-job {
@@ -143,20 +143,20 @@
   height: 16px;
   display: block;
   border-radius: 50%;
-  background-color: var(--clr-secondary);
+  background-color: $clr-secondary;
   position: absolute;
   left: -9px;
 }
 
 .resume-job h3 {
   font-size: 20px;
-  color: var(--clr-base);
+  color: $clr-base;
   line-height: 1;
   margin-bottom: 10px;
 }
 
 .resume-job .time-and-role {
-  color: var(--clr-secondary);
+  color: $clr-secondary;
 }
 
 /*********************
@@ -177,7 +177,7 @@
 }
 
 .main-heading .name {
-  color: var(--clr-secondary);
+  color: $clr-secondary;
   font-size: 52px;
   font-weight: 700;
   line-height: 1;
@@ -194,7 +194,7 @@
 .main-heading span {
   font-weight: 300;
   font-size: 28px;
-  color: var(--clr-base-dark);
+  color: $clr-base-dark;
 }
 
 /*********************
@@ -217,7 +217,7 @@
 }
 
 .service__title {
-  color: var(--clr-base);
+  color: $clr-base;
   font-size: 24px;
   line-height: 1;
   margin-bottom: 10px;
