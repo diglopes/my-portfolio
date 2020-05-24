@@ -1,3 +1,5 @@
+import '../scss/main.scss'
+
 const buttons = document.querySelectorAll(".nav-item");
 
 buttons.forEach((btn) => {

@@ -314,7 +314,7 @@
   background-color: #fff;
   margin: 10px;
   display: block;
-  background: url(../images/placeholder.png) center center;
+  background: url(../assets/images/placeholder.png) center center;
   background-size: cover;
   transition: all 0.3s ease;
   position: relative;
@@ -365,13 +365,13 @@
   background-size: cover;
 }
 #contact .contact-info .phone:before {
-  background-image: url(../images/telefone_contato.svg);
+  background-image: url(../assets/images/telefone_contato.svg);
 }
 #contact .contact-info .mail:before {
-  background-image: url(../images/email.svg);
+  background-image: url(../assets/images/email.svg);
 }
 #contact .contact-info .address:before {
-  background-image: url(../images/pin_localizacao.svg);
+  background-image: url(../assets/images/pin_localizacao.svg);
 }
 
 #contact .contact-info a {
