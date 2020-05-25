@@ -267,47 +267,6 @@
 }
 
 /*********************
-*       CONTACT
-*********************/
-#contact .contact-info {
-  margin-bottom: 30px;
-}
-
-#contact .contact-info li {
-  margin: 5px;
-  display: flex;
-  align-items: center;
-}
-
-#contact .contact-info li:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right: 15px;
-  background-position: center center;
-  background-size: cover;
-}
-#contact .contact-info .phone:before {
-  background-image: url(../assets/images/telefone_contato.svg);
-}
-#contact .contact-info .mail:before {
-  background-image: url(../assets/images/email.svg);
-}
-#contact .contact-info .address:before {
-  background-image: url(../assets/images/pin_localizacao.svg);
-}
-
-#contact .contact-info a {
-  font-size: 18px;
-  color: #fff;
-}
-
-#contact .contact-info a:hover {
-  text-decoration: underline;
-}
-
-/*********************
 *       FOOTER
 *********************/
 

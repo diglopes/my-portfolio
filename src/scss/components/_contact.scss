@@ -1,0 +1,46 @@
+.contact-info {
+    margin-bottom: 30px;
+
+    &__data {
+        margin: 5px;
+        display: flex;
+        align-items: center;
+
+        &:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-right: 15px;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        &--phone {
+            &:before {
+                background-image: url(../assets/images/telefone_contato.svg);
+            }
+        }
+
+        &--mail {
+            &:before {
+                background-image: url(../assets/images/email.svg);
+            }
+        }
+
+        &--address {
+            &:before {
+                background-image: url(../assets/images/pin_localizacao.svg);
+            }
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        color: #fff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
