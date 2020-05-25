@@ -23,16 +23,6 @@ img {
   max-width: 100%;
 }
 
-.wrapper {
-  display: flex;
-}
-
-@media screen and (max-width: 500px) {
-  .wrapper {
-    flex-direction: column;
-  }
-}
-
 @keyframes move-in {
   0% {
     opacity: 0;

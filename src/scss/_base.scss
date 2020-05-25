@@ -36,3 +36,13 @@ p {
 .content {
     align-self: end;
 }
+
+.wrapper {
+    display: flex;
+}
+  
+@media screen and (max-width: 500px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
