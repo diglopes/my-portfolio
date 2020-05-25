@@ -1,0 +1,31 @@
+.jobs-list {
+    border-left: 2px solid $clr-base;
+}
+
+.job {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 30px;
+  
+  &:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 50%;
+    background-color: $clr-secondary;
+    position: absolute;
+    left: -9px;
+  }
+  
+  &__title {
+    font-size: 20px;
+    color: $clr-base;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  
+  &__time-and-role {
+    color: $clr-secondary;
+  }
+}

@@ -124,42 +124,6 @@
 }
 
 /*********************
-*       RESUME
-*********************/
-
-.resume-wrapper {
-  border-left: 2px solid $clr-base;
-}
-
-.resume-job {
-  padding-left: 30px;
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.resume-job:before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  display: block;
-  border-radius: 50%;
-  background-color: $clr-secondary;
-  position: absolute;
-  left: -9px;
-}
-
-.resume-job h3 {
-  font-size: 20px;
-  color: $clr-base;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-
-.resume-job .time-and-role {
-  color: $clr-secondary;
-}
-
-/*********************
 *    PRESENTATION
 *********************/
 
