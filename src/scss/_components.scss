@@ -164,45 +164,7 @@
 /*********************
 *     PORTFOLIO
 *********************/
-#portfolio ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -10px;
-}
 
-#portfolio ul li a {
-  height: 130px;
-  min-width: 130px;
-  background-color: #fff;
-  margin: 10px;
-  display: block;
-  background: url(../assets/images/placeholder.png) center center;
-  background-size: cover;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-#portfolio ul li a:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-#portfolio ul li a:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
-}
-
-#portfolio ul li a:hover::after {
-  opacity: 1;
-}
 
 @keyframes move-in {
   0% {
