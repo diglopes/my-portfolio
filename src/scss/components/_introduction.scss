@@ -1,0 +1,33 @@
+.introduction {
+
+    &__title {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min-content, max-content));
+        margin-right: auto;
+        font-weight: 300;
+        font-size: 28px;
+        color: $clr-base-dark;
+
+        &-who {
+            justify-self: right;
+            align-self: end;
+            margin-right: 12px;
+            margin-bottom: -2px;
+        }
+
+        &-name {
+            color: $clr-secondary;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 1.4px;
+            margin-left: -2px;
+        }
+
+        &-profession {
+            font-size: 24px;
+            grid-column: 2 / -1;
+            letter-spacing: 2px;
+        }
+    }
+}
