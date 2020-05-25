@@ -1,40 +1,4 @@
 /*********************
-*       MAIN
-*********************/
-
-.main {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(
-    140deg,
-    #db7280,
-    #b26d80 25%,
-    #cb707f 25%,
-    #cb707f 75%,
-    #b26d80 75%,
-    #db7280
-  );
-  display: grid;
-  grid-template-columns: 45% 55%;
-  grid-auto-rows: minmax(min-content, max-content) 1fr;
-}
-
-@media screen and (max-width: 500px) {
-  .main {
-    height: calc(100vh - 62px);
-  }
-}
-
-/*********************
-*      CONTENT
-*********************/
-
-.content {
-  align-self: end;
-}
-
-
-/*********************
 *    PRESENTATION
 *********************/
 
