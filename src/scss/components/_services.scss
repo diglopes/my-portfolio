@@ -1,0 +1,21 @@
+.service {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 10px;
+  
+  + .service {
+    margin-top: 30px;
+  }
+  
+  &__logo {
+    width: 60px;
+    justify-self: center;
+  }
+  
+  &__title {
+    color: $clr-base;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+}
