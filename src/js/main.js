@@ -1,32 +1,17 @@
+import NavigationMenu from './NavigationMenu'
+import Listener from './Listener'
+import ElementHandler from './ElementHandler'
+import Content from './Content'
+
 import '../scss/main.scss'
 
-const buttons = document.querySelectorAll(".nav-item");
-
-buttons.forEach((btn) => {
-  btn.addEventListener("click", ({ currentTarget }) => {
-    changeActiveMenuItem(currentTarget);
-    const { article } = currentTarget.dataset;
-    removeCurrentArticle();
-    showRelatedArticle(article);
-  });
-});
-
-function removeCurrentArticle() {
-  const article = document.querySelector(".show");
-  if (article) {
-    article.classList.remove("show");
-    article.classList.add("hide");
-  }
-}
-
-function showRelatedArticle(selector) {
-  const article = document.getElementById(selector);
-  article.classList.remove("hide");
-  article.classList.add("show");
-}
-
-function changeActiveMenuItem(currentElement) {
-  const oldActive = document.querySelector(".active");
-  oldActive.classList.remove("active");
-  currentElement.classList.add("active");
-}
+const buttons = ElementHandler.getByClass('nav-item', true)
+const listener = new Listener()
+const content = new Content(ElementHandler, 'show')
+const navigationMenu = new NavigationMenu({
+    listener,
+    elements: buttons,
+    activeClassName:  'nav-item--active',
+    ElementHandler
+})
+navigationMenu.onChange(content.showById)
