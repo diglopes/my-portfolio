@@ -7,3 +7,11 @@ h2 {
     border-bottom: 2px solid $clr-secondary;
     display: inline-block;
 }
+
+p {
+    font-size: 16px;
+    line-height: 1.3;
+    color: $clr-base;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}

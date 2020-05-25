@@ -1,0 +1,40 @@
+.btn {
+    color: $clr-base;
+    background-color: $clr-base-dark;
+    border: none;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(68, 91, 124, 0.3);
+    transition: all 0.3s;
+  
+  &:hover {
+    background-color: #394f6d;
+  }
+  
+  > svg {
+    height: 20px;
+    margin-right: 10px;
+    fill: $clr-base;
+  }
+}
+
+.article {
+
+    &:not(.show) {
+        display: none;
+    }
+
+    p:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
+
+    &__content {
+        margin-left: 100px;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+}
