@@ -5,7 +5,7 @@
         grid-template-columns: repeat(2, minmax(min-content, max-content));
         margin-right: auto;
         font-weight: 300;
-        font-size: 28px;
+        font-size: $fz-xl;
         color: $clr-base-dark;
 
         &-who {
@@ -13,21 +13,34 @@
             align-self: end;
             margin-right: 12px;
             margin-bottom: -2px;
+
+            @include tablet {
+                font-size: $fz-lg;
+            }
         }
 
         &-name {
             color: $clr-secondary;
-            font-size: 52px;
+            font-size: $fz-xxl;
             font-weight: 700;
             line-height: 1;
             letter-spacing: 1.4px;
             margin-left: -2px;
+            
+            @include tablet {
+                font-size: size(46.18);
+            }
+            
         }
 
         &-profession {
             font-size: 24px;
             grid-column: 2 / -1;
             letter-spacing: 2px;
+
+            @include tablet {
+                font-size: size(21.25);
+            }
         }
     }
 }

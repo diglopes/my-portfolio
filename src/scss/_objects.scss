@@ -33,8 +33,13 @@
     }
 
     &__content {
-        margin-left: 100px;
-        margin-top: 30px;
-        margin-right: 20px;
+        margin-left: $spc-xl;
+        margin-top: $spc-lg;
+        margin-right: $spc-md;
+
+        @include tablet {
+          margin-left: $spc-lg;
+          margin-top: $spc-md;
+        }
     }
 }

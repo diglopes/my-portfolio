@@ -7,3 +7,23 @@ $clr-gradient: linear-gradient(to bottom, $clr-primary, #ac6d82);
 $clr-secondary: #ffaa55;
 $clr-base: #fff;
 $clr-base-dark: #445b7c;
+
+// --------------------------------------------------
+// 2. Typography
+// --------------------------------------------------
+
+$fz-sm: size(14.22);
+$fz-md: size(16);
+$fz-lg: size(25.63);
+$fz-xl: size(28.83);
+$fz-xxl: size(51.96);
+
+// --------------------------------------------------
+// 3. Spaces
+// --------------------------------------------------
+
+$spc-sm: size(10);
+$spc-md: size(20);
+$spc-lg: size(40);
+$spc-xl: size(80);
+

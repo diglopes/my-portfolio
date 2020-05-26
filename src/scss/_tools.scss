@@ -1,0 +1,15 @@
+@function size($target) {
+    @return ($target / 16) * 1rem;
+}
+
+@mixin phone {
+    @media (max-width: 599px) { @content; }
+}
+
+@mixin tablet {
+@media (max-width: 992px) { @content; }
+}
+
+@mixin desktop {
+@media (min-width: 993px) { @content; }
+}

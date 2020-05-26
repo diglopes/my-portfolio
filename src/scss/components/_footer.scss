@@ -1,10 +1,14 @@
 .footer {
-    color: #834a5d;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 14px;
-    margin-left: 100px;
+  color: #834a5d;
+  margin-bottom: $spc-md;
+  margin-top: $spc-xl;
+  font-weight: bold;
+  font-size: $fz-sm;
+  margin-left: $spc-xl;
+
+  @include tablet {
+    margin-left: $spc-lg;
+  }
   
   .heart-emoji {
     color: #c70039;

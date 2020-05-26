@@ -1,19 +1,28 @@
 h2 {
     color: $clr-secondary;
     font-weight: normal;
-    font-size: 28px;
-    padding-left: 100px;
+    font-size: $fz-xl;
+    padding-left: $spc-xl;
     padding-right: 40px;
     border-bottom: 2px solid $clr-secondary;
     display: inline-block;
+
+    @include tablet {
+        font-size: $fz-lg;
+        padding-left: $spc-lg
+    }
 }
 
 p {
-    font-size: 16px;
+    font-size: $fz-md;
     line-height: 1.3;
     color: $clr-base;
     font-weight: 500;
     letter-spacing: 1.2px;
+
+    @include tablet {
+        font-size: $fz-sm;
+    }
 }
 
 .main {
@@ -31,6 +40,11 @@ p {
     display: grid;
     grid-template-columns: 45% 55%;
     grid-auto-rows: minmax(min-content, max-content) 1fr;
+
+    @include tablet {
+        height: calc(100vh - 52px);
+        grid-template-columns: 50% 50%
+    }
 }
 
 .content {
@@ -39,6 +53,10 @@ p {
 
 .wrapper {
     display: flex;
+    
+    @include tablet {
+        flex-direction: column;
+    }
 }
   
 @media screen and (max-width: 500px) {
