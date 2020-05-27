@@ -1,11 +1,16 @@
 .introduction {
 
+    @include phone {
+        grid-row-start: 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     &__title {
         display: grid;
         grid-template-columns: repeat(2, minmax(min-content, max-content));
         margin-right: auto;
         font-weight: 300;
-        font-size: $fz-xl;
         color: $clr-base-dark;
 
         &-who {
@@ -16,6 +21,10 @@
 
             @include tablet {
                 font-size: $fz-lg;
+            }
+
+            @include phone {
+                font-size: size(20.25);
             }
         }
 
@@ -31,6 +40,9 @@
                 font-size: size(46.18);
             }
             
+            @include phone {
+                font-size: size(36.49);
+            }
         }
 
         &-profession {
@@ -40,6 +52,11 @@
 
             @include tablet {
                 font-size: size(21.25);
+            }
+
+            @include phone {
+                grid-column: 1 / -1;
+                font-size: size(20.25);
             }
         }
     }

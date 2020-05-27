@@ -2,5 +2,9 @@
 
     .btn {
         margin-top: $spc-lg;
+
+        @include phone {
+            margin-top: $spc-xl;
+        }
     }
 }

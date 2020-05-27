@@ -10,14 +10,32 @@
         margin-bottom: 25px;
         padding-right: $spc-lg;
     }
+
+    @include phone {
+        justify-self: center;
+        margin-top: $spc-lg;
+        margin-bottom: $spc-lg;
+        padding-right: 0px;
+    }
 }
   
 .social-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 30px;
     right: 100px;
     top: 40px;
+    grid-column-gap: 30px;
+
+    @include phone {
+        grid-column-gap: 0;
+        
+        a {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
     &__item-img {
         height: 23px;
@@ -26,6 +44,10 @@
 
         &:hover {
             fill: $clr-secondary;
+        }
+
+        @include phone {
+            height: 20px;
         }
     }
 }

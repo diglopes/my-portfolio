@@ -1,8 +1,16 @@
 .service {
   display: grid;
-  grid-template-columns: 20% 80%;
-  grid-gap: 10px;
+  grid-template-columns: 60px 1fr;
+  grid-gap: $spc-lg;
   
+  @include tablet {
+    grid-template-columns: 50px 1fr;
+    grid-gap: $spc-md;
+  }
+
+  @include phone {
+    grid-template-columns: 45px 1fr;
+  }
   
   + .service {
     margin-top: 30px;
@@ -11,10 +19,6 @@
   &__logo {
     width: 60px;
     justify-self: center;
-
-    @include tablet {
-      width: 45px;
-    }
   }
   
   &__title {

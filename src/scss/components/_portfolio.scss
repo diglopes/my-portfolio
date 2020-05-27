@@ -3,10 +3,16 @@
     flex-wrap: wrap;
     margin-top: -10px;
     margin-left: -10px;
+    justify-content: center;
+
+    @include phone {
+      margin-left: auto;
+      margin-right: auto;
+    }
   
   &__item {
-    height: 130px;
-    min-width: 130px;
+    height: size(130);
+    min-width: size(130);
     background-color: #fff;
     margin: 10px;
     display: block;
@@ -17,7 +23,13 @@
 
     @include tablet {
       height: size(100);
-      width: size(100);
+      min-width: size(100);
+    }
+
+    @include phone {
+      height: size(80);
+      min-width: size(80);
+      margin: 5px;
     }
 
     &:after {

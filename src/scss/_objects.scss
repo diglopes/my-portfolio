@@ -24,22 +24,33 @@
 
 .article {
 
+  &:not(.show) {
+      display: none;
+  }
+
+  p:not(:last-of-type) {
+      margin-bottom: 15px;
+  }
+
+  &__content {
+      margin-left: $spc-xl;
+      margin-top: $spc-lg;
+      margin-right: $spc-md;
+
+      @include tablet {
+        margin-left: $spc-lg;
+        margin-top: $spc-md;
+      }
+
+      @include phone {
+        margin-bottom: $spc-xl;
+        margin-left: $spc-md;
+      }
+  }
+
+  @include phone {
     &:not(.show) {
-        display: none;
+      display: initial;
     }
-
-    p:not(:last-of-type) {
-        margin-bottom: 15px;
-    }
-
-    &__content {
-        margin-left: $spc-xl;
-        margin-top: $spc-lg;
-        margin-right: $spc-md;
-
-        @include tablet {
-          margin-left: $spc-lg;
-          margin-top: $spc-md;
-        }
-    }
+  }
 }

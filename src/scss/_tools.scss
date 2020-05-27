@@ -3,7 +3,7 @@
 }
 
 @mixin phone {
-    @media (max-width: 599px) { @content; }
+    @media (max-width: 740px) { @content; }
 }
 
 @mixin tablet {

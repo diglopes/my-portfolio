@@ -11,6 +11,10 @@ h2 {
         font-size: $fz-lg;
         padding-left: $spc-lg
     }
+
+    @include phone {
+        padding-left: $spc-md;
+    }
 }
 
 p {
@@ -45,10 +49,19 @@ p {
         height: calc(100vh - 52px);
         grid-template-columns: 50% 50%
     }
+
+    @include phone {
+        grid-template-columns: 1fr;
+    }
 }
 
 .content {
     align-self: end;
+
+    @include phone {
+        position: absolute;
+        top: calc(100vh + 2rem);
+    }
 }
 
 .wrapper {
